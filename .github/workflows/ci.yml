@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main, preview]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate & Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Validate JSON
+        run: |
+          for f in src/*.json locales/*.json; do
+            echo "Checking $f..."
+            bun -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" \
+              && echo "  ✓ valid" \
+              || { echo "  ✗ invalid JSON in $f"; exit 1; }
+          done
+
+      - name: Build agent manifest
+        run: bun run build
+
+      - name: Verify output
+        run: |
+          if [ ! -f dist/agents.json ]; then
+            echo "dist/agents.json was not generated"
+            exit 1
+          fi
+          echo "dist/agents.json contents:"
+          cat dist/agents.json

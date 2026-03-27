@@ -1,0 +1,27 @@
+{
+  "name": "bitrefill-agent",
+  "version": "1.0.0",
+  "description": "Bitrefill Shopping Assistant agent for SperaxOS / defi-agents",
+  "main": "src/bitrefill-shopping-assistant.json",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "format": "prettier --write \"src/**/*.json\" \"locales/**/*.json\"",
+    "lint": "bun scripts/lint.ts",
+    "test": "bun test"
+  },
+  "keywords": [
+    "bitrefill",
+    "gift-cards",
+    "esims",
+    "top-ups",
+    "crypto",
+    "ai-agent",
+    "sperax"
+  ],
+  "author": "nirholas",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
