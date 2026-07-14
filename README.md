@@ -27,4 +27,4 @@ Full Bitrefill API documentation: [docs.bitrefill.com/docs](https://docs.bitrefi
 
 ## License
 
-MIT
+All rights reserved. See [LICENSE](LICENSE).
