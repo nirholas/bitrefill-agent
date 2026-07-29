@@ -1,6 +1,6 @@
 /**
  * Build script: validates all src/*.json agent definitions
- * and writes a combined agents/index.json manifest.
+ * and writes a combined dist/agents.json manifest.
  *
  * Run: bun scripts/build.ts
  */

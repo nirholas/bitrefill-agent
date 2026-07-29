@@ -6,7 +6,6 @@
   "scripts": {
     "build": "bun scripts/build.ts",
     "format": "prettier --write \"src/**/*.json\" \"locales/**/*.json\"",
-    "lint": "bun scripts/lint.ts",
     "test": "bun test"
   },
   "keywords": [
@@ -19,6 +18,14 @@
     "sperax"
   ],
   "author": "nirholas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nirholas/bitrefill-agent.git"
+  },
+  "homepage": "https://github.com/nirholas/bitrefill-agent#readme",
+  "bugs": {
+    "url": "https://github.com/nirholas/bitrefill-agent/issues"
+  },
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "prettier": "^3.0.0",
