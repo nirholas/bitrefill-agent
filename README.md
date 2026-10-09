@@ -28,3 +28,7 @@ Full Bitrefill API documentation: [docs.bitrefill.com/docs](https://docs.bitrefi
 ## License
 
 All rights reserved. See [LICENSE](LICENSE).
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=nirholas/bitrefill-agent&type=Date)](https://www.star-history.com/#nirholas/bitrefill-agent&Date)
