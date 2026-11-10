@@ -1,0 +1,21 @@
+{
+  "name": "bitrefill-agent",
+  "owner": {
+    "name": "nirholas"
+  },
+  "description": "Guidance for buying gift cards, eSIMs and phone top-ups with crypto or balance through the Bitrefill API.",
+  "plugins": [
+    {
+      "name": "bitrefill-shopping-assistant",
+      "source": "./plugins/bitrefill-shopping-assistant",
+      "description": "Guidance for buying gift cards, eSIMs and phone top-ups with crypto or balance through the Bitrefill API.",
+      "category": "productivity",
+      "tags": [
+        "bitrefill",
+        "gift-cards",
+        "esim",
+        "crypto-payments"
+      ]
+    }
+  ]
+}
