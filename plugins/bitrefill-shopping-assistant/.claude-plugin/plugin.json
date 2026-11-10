@@ -1,0 +1,16 @@
+{
+  "name": "bitrefill-shopping-assistant",
+  "version": "1.0.0",
+  "description": "Guidance for buying gift cards, eSIMs and phone top-ups with crypto or balance through the Bitrefill API.",
+  "author": {
+    "name": "nirholas"
+  },
+  "repository": "https://github.com/nirholas/bitrefill-agent",
+  "homepage": "https://github.com/nirholas/bitrefill-agent",
+  "keywords": [
+    "bitrefill",
+    "gift-cards",
+    "esim",
+    "crypto-payments"
+  ]
+}
